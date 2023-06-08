@@ -24,7 +24,7 @@ async function searchImages(){
 
     results.map((result) =>{
         const imageWrapper = document.createElement('div')
-        imageWrapper.classList.add(search-result)
+        imageWrapper.classList.add('search-result')
         const image = document.createElement('img')
         image.src = result.urls.small
         image.alt = result.alt_description
@@ -35,7 +35,7 @@ async function searchImages(){
 
         imageWrapper.appendChild(image)
         imageWrapper.appendChild(imageLink)
-        imageWrapper.appendChild(imageWrapper)
+        searchResults.appendChild(imageWrapper)
     });
 
     page++;
